@@ -1,9 +1,14 @@
 {
   "name": "smog-relief-frontend",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.59.0",
+    "@wagmi/core": "^2.22.1",
     "next": "^14.2.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
