@@ -1,0 +1,25 @@
+:root { --bg:#0f1115; --card:#181b22; --line:#272b35; --text:#e8eaf0; --mute:#8b92a3; --accent:#4f8cff; --hot:#ff6b4a; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 960px; margin: 0 auto; padding: 16px 20px 48px; }
+.banner { background:#3a2a10; color:#ffcf7a; border-radius:8px; padding:8px 12px; font-size:13px; text-align:center; }
+header { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; margin:24px 0; }
+h1 { margin:0 0 8px; font-size:28px; } h2 { margin:0 0 8px; font-size:17px; }
+.sub { margin:0; color:var(--mute); max-width:560px; line-height:1.5; }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-bottom:14px; }
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:14px; }
+.grid .card { margin-bottom:0; display:flex; flex-direction:column; gap:4px; }
+.big.hot { border-color:var(--hot); }
+.num { font-size:34px; font-weight:700; } .hot .num { color:var(--hot); }
+.label { font-size:12px; color:var(--mute); }
+.row { display:flex; gap:10px; margin-top:10px; }
+button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 16px; font-size:14px; cursor:pointer; }
+button:disabled { opacity:.4; cursor:not-allowed; }
+button.ghost { background:transparent; border:1px solid var(--line); color:var(--text); }
+input { background:var(--bg); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:9px 12px; width:130px; font-size:14px; }
+.warn { border-color:#b8860b; } .sim { border-style:dashed; border-color:#b8860b; } .err { color:var(--hot); }
+a { color:var(--accent); } footer { color:var(--mute); font-size:12px; margin-top:24px; }
+@media (max-width:720px) { .grid, .grid.two { grid-template-columns:1fr; } header { flex-direction:column; } }
+select { background:var(--bg); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:9px 10px; font-size:14px; }
+.row { flex-wrap: wrap; }
