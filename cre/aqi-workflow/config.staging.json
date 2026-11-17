@@ -1,0 +1,7 @@
+{
+  "schedule": "0 */5 * * * *",
+  "apiUrl": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=31.5204&longitude=74.3587&current=us_aqi",
+  "chainName": "ethereum-testnet-sepolia",
+  "oracleAddress": "0x2c401d4095056b8d6dccD6460fa43168A205a0AB",
+  "gasLimit": "1000000"
+}
