@@ -68,6 +68,4 @@ Run `npm run dev` and open http://localhost:3000. Wallet transactions require Me
 | `cre/` | Chainlink CRE workflow and configuration |
 | `keeper/` | Local AQI refresh and payout script |
 
-MetaMask classification review: https://github.com/MetaMask/eth-phishing-detect/issues/313399
-
 Built by Muhammad Umer.
