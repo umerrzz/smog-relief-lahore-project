@@ -40,6 +40,18 @@ CRE deployment access documentation: https://docs.chain.link/cre/guides/operatio
 - SmogReliefPoolV4: https://sepolia.etherscan.io/address/0x7bC02F88dfEa36f8Db7711b6AEA0092bd52D1966#code
 - AirQualityOracle: https://sepolia.etherscan.io/address/0x2c401d4095056b8d6dccD6460fa43168A205a0AB#code
 
+
+## V3 payout history
+
+The previous V3 pool was tested end to end on Ethereum Sepolia. The test run included worker registration, a funded pool, a successful payout trigger, and a claim that transferred testnet tokens to a worker’s wallet. Open the claim transaction on Etherscan to see the token transfer in the transaction details.
+
+- Verified V3 pool contract: https://sepolia.etherscan.io/address/0xb92721d1624BbfbE1BC8649E0975e682f9A15211#code
+- Payout trigger transaction: https://sepolia.etherscan.io/tx/0x87c181ff8e0ba290b9f4713dbc46e08a92229d67e6149eda8c4b84e0956ddbb2
+- Worker claim transaction: https://sepolia.etherscan.io/tx/0xa97a98631730940d3e756f55adedb049d45e4e527a6577932b9106c4ed97fea7
+
+V3’s five worker slots filled during testing. I moved the live dashboard to V4 so new visitors could register and try the demo. V4 started with 20 slots and allows the contract owner to adjust capacity as more people try it.
+
+
 ## Run the dashboard locally
 
 With Node.js and npm installed, clone this repository and install its dependencies.
